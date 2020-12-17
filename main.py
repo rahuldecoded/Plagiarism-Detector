@@ -3,6 +3,7 @@ from preprocessing import preprocessing
 from BoyerMoore import boyer_moore
 from RabinKarp import rabin_karp
 from KMP import kmp
+from LCS import lcs
 
 # Read the user's file
 with open('Sample1.txt', 'r') as reader:
@@ -25,6 +26,8 @@ print("Boyer Moore:", boyer_moore_value)
 kmp_value = kmp(user_file, available_file)
 print("KMP:", kmp_value)
 
+lcs_value = lcs(user_file, available_file)
+print("LCS:", lcs_value)
 
 
 if __name__ == '__main__':
